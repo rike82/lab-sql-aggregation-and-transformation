@@ -4,7 +4,7 @@ SELECT MIN(length) AS min_duration, MAX(length) AS max_duration
 FROM film;
 
 # 1.2. Express the average movie duration in hours and minutes. Don't use decimals.
-/*SELECT 
+SELECT 
 	CONCAT(
 		FLOOR(AVG(length)/60), 'h' ,
         ROUND(AVG(length)%60), 'min' 
@@ -30,7 +30,7 @@ FROM rental;
 # 3 Retrieve the film titles and their rental duration. If any rental duration value is NULL, replace it with the string 'Not Available'. Sort the results of the film title in ascending order.
 SELECT title, IFNULL(rental_duration, 'Not Available') AS 'rental_duration'
 FROM film
-ORDER BY title ASC; */
+ORDER BY title ASC; 
 
 #################################################################  CHALLENGE 2  ############################################################
 
